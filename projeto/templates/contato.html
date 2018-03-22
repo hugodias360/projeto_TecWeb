@@ -8,17 +8,23 @@
 		<h1> FORMULÁRIO PARA CONTATO </h1><br>
 		 <form name="FormContato" action="Contato" method="POST">
 		 
-				<label><strong>Nome Completo:</strong></label><br> <input type="text"maxlength="30" name="nomeUser"size="70"required placeholder="Digite o seu nome"><br>
+				<label><strong>Nome Completo:</strong></label><br>
+				 <input type="text"maxlength="30" name="nomeContato"size="70"required placeholder="Digite o seu nome"><br>
 				<br>
-				<label><strong>E-mail:</strong></label><br> <input type="text" maxlength="30" name="emailUser"size="70" required placeholder="Digite o seu e-mail"><br>
+				<label><strong>E-mail:</strong></label><br> 
+				<input type="text" maxlength="30" name="emailContato"size="70" required placeholder="Digite o seu e-mail"><br>
 				<br>
-				<label><strong>Telefone:</strong></label><br> <input type="tel"maxlength="13" name="telUser" required placeholder= "(xxx)-(xxxxxxxxx)"> <br>
+				<label><strong>Telefone:</strong></label><br> 
+				<input type="tel"maxlength="13" name="telContato" required placeholder= "(xxx)-(xxxxxxxxx)"> <br>
 				<br>
-				<strong>Assunto da mensagem:</strong><br> <input type="radio" value="item1" name="op">Lentidão<br><input type="radio" value="Item2"name="op">Formatação<br>
-				<input type="radio" value="item3"name="op">Peças danificadas<br><input type="radio"value="item4"name="op">Outros<br>
+				<strong>Assunto da mensagem:</strong><br> 
+				<input type="radio" value="lentidao" name="op">Lentidão<br>
+				<input type="radio" value="formatacao"name="op">Formatação<br>
+				<input type="radio" value="peca_Danificas"name="op">Peças danificadas<br>
+				<input type="radio"value="outras"name="op">Outros<br>
 				<br>
 				<label><strong>Descrição do assunto:</strong></label><br>
-				<textarea name="Descrição" rows="8" cols="72">Descreva a sua mensagem neste campo...</textarea><br>
+				<textarea name="descricao" rows="8" cols="72">Descreva a sua mensagem neste campo...</textarea><br>
 				<br>
 				<input type="submit" value="Envie sua mensagem"><br>
 				<br>

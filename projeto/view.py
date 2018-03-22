@@ -31,5 +31,11 @@ def contato(request):
         print("Acesso via GET")
         return render(request, "contato.html")
     else:
-        print("Acesso via POST, Nome: " + request.POST.get("nome") + " Sobrenome:" + request.POST.get("sobrenome"))
+        nome = request.POST.get("nomeContato")
+        email = request.POST.get("emailContato")
+        telefone = request.POST.get("telContato")
+        opcao = request.POST.get("op")
+        descricao = request.POST.get("descricao")
+        print("Acesso via POST, Nome: " + nome + " E-mail:" + email + " telefone: " + telefone + 
+            " Opção: " + opcao + " Descrição" + descricao)
     return render(request, "contato.html")

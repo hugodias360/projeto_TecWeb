@@ -1,1 +1,23 @@
 
+Fonte: Arial
+Backgroud: Azul = #E3F2FD
+font-size: 20px;
+Titulos em Negrito;
+
+
+Nome:	Função
+Hugo	Menu
+Hugo  index: notícias, depoimentos, prêmios, etc.
+Guilherme	● cursos: lista de cursos da sua instituição (com imagens)
+Matheus	● detalhe de curso: detalhe de um curso específico (semestre, carga horária,
+	descrição).
+Shirley	● disciplinas de curso: Uma lista de disciplinas de um curso (separados por
+	semestre).
+mike	● detalhes de disciplina: Detalhes de uma disciplina (objetivos, competências,
+	bibliografia, critérios de avaliação, etc.)
+Fabio	● login: formulário de login por email, com um campo para o Lembrar de Mim(
+	apenas um checkbox)
+Everton	● novo curso: formulário de Cadastro para novos cursos.
+Venancio	● nova disciplina: formulário de Cadastro para novas disciplinas
+	Obs.: Sigam as informações existentes no banco de dados para criar os
+	formulários de Cadastro.

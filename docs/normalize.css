@@ -347,7 +347,7 @@ nav{
   background: url(img/nav-bar.jpg) repeat-x;
 }
 .nav-total  {
-
+position: fixed;
 height:60px;
 background: url(img/nav-bar.jpg) repeat-x;
 }

@@ -1,0 +1,55 @@
+body {
+    background: #E3F2FD;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.buttonVoltar {
+    background-color:#FF0000; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+.buttoncadastrar {
+    background-color:green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+.text{
+    text-align: center;
+    float: right;
+    margin-top: 100px;
+}
+.text1{
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+}
+.text2{
+    text-align: center;
+    float: center;
+    margin-top: 100px;
+}

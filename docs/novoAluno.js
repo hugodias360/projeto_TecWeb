@@ -7,11 +7,11 @@ document.getElementById("formNovoAluno").onsubmit=function(event){
             alert("Aluno com idade menor a 17 anos");
             return false;
       }
-      var cpfCampo = document.getElementById("cpf");
-      if(validaCPF(cpfCampo.value)){
-            alert("Cpf invalido");
-            return false;
-      }
+      var cpf = document.getElementById("cpf").value
+	var checarCpf = validaCPF(cpf);
+	if(!checarCpf){
+		alert("CPF inválido")
+	}
       
       var senhaCampo = document.getElementById("senha");
       var confirmarSenhaCampo = document.getElementById("confirmarSenha");

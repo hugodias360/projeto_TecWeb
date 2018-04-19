@@ -1,5 +1,6 @@
-function validar(){
-            var inputs = document.getElementsByTagName("input")
+
+document.getElementById("formMatricula").onsubmit=function(event){
+         var inputs = document.getElementsByTagName("input")
     
             var i = 0, aprovados = 0, cancelados = 0;
             for(i=0; i< inputs.length; i++){
@@ -13,4 +14,4 @@ function validar(){
                 }
             }
         confirm("Alunos aprovados: "+ aprovados + ", Alunos cancelados: " + cancelados)
-        }
+}

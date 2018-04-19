@@ -14,5 +14,3 @@ function validar(){
             }
         confirm("Alunos aprovados: "+ aprovados + ", Alunos cancelados: " + cancelados)
         }
-
-<input type="submit" name="" id="" onclick="validar()">

@@ -1,10 +1,18 @@
-document.getElementById("formMatricula").onsubmit = function() {
-    var opcao = getElementById("opcao").value
-    if (opcao != APROVADO || opcao != CANCELADO)
-    {
-      alert("Necessário selecionar alguma opção!");
-      document.form.opcao.style.background="#FF6666";
-                  document.form.opcao.focus()
-      return false
-    }
-};
+function validar(){
+            var inputs = document.getElementsByTagName("input")
+    
+            var i = 0, aprovados = 0, cancelados = 0;
+            for(i=0; i< inputs.length; i++){
+                if(inputs[i].id == "status"){
+                    if(inputs[i].value == "aprovado" && inputs[i].checked){
+                        aprovados++
+                    }
+                    if(inputs[i].value == "cancelado" && inputs[i].checked){
+                        cancelados++
+                    }
+                }
+            }
+        confirm("Alunos aprovados: "+ aprovados + ", Alunos cancelados: " + cancelados)
+        }
+
+<input type="submit" name="" id="" onclick="validar()">

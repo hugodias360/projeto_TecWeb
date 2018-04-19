@@ -418,7 +418,18 @@ footer  {
   cursor: pointer;
   width: 100%;
 }
-input[type=email], input[type=password]{
+input[type=submit]{
+  background-color: #2B5074;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=email], input[type=password], input[type=text], input[type=date]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -540,4 +551,11 @@ a:visited{
   text-align: center;
   float: center;
   margin-top: 100px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  height: 50px;
+  
 }

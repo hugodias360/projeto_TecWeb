@@ -373,7 +373,7 @@ nav ul li a:hover  {
 	
 }
 body  {
-  background:url(img/planoFundo.jpg)
+  background:url(img/planoFundo.jpg);
   background:#1C344C;
   font-family: Arial;
   margin-top: 01px;

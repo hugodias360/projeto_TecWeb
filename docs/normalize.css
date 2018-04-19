@@ -429,7 +429,7 @@ input[type=submit]{
   width: 100%;
 }
 
-input[type=email], input[type=password], input[type=text], input[type=date]{
+input[type=email], input[type=password], input[type=text], input[type=date], textarea{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

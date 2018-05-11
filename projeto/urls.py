@@ -16,8 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from projeto.view import * 
+from contas.views import *
 
 urlpatterns = [
+    path('indexProfessor/', indexProfessor),
+    path('editProfessor/', editProfessor),
+    path('deletexProfessor/', deleteProfessor),
+    path('updateProfessor/', updateProfessor),
     path('admin/', admin.site.urls),
     path('login/', login),
     path('contato/', contato),

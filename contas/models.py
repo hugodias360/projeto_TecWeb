@@ -27,6 +27,7 @@ class PROFESSOR(models.Model):
     DT_EXPIRACAO = models.DateField("DT_EXPIRACAO", max_length=100)
     APELIDO = models.CharField("APELIDO", max_length=100)
 
+
 class MENSAGEM(models.Model):
     ASSUNTO = models.CharField("ASSUNTO", max_length=300)
     REFERENCIA = models.CharField("REFERENCIA", max_length=300)

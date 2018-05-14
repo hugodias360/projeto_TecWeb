@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block body %}
+<form class="form-inline"  action="create" method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <label for="login">Login</label>    </br>
+        <input type="text" name="login" required="required"/>
+    </div>
+    </br>
+    <div class="form-group">
+        <label for="senha">Senha</label>    </br>
+        <input type="password" name="senha" required="required"/>
+    </div>
+</br>
+    <div class="form-group">
+        <label for="nome">Nome</label>    </br>
+        <input type="text" name="nome" required="required"/>
+    </div>
+</br>
+    <div class="form-group">
+        <label for="email">E-mail</label>     </br>
+        <input type="text" name="email" required="required"/>
+    </div>
+</br>
+    <div class="form-group">
+        <label for="celular">Celular</label>     </br>
+        <input type="text" name="celular" required="required"/>
+    </div>
+</br>
+    <div class="form-group">
+        <label for="apelido">Apelido</label>     </br>
+        <input type="text" name="apelido"  required="required"/>
+    </div> 
+</br>
+</br>
+    <a href="/contas/professor/" type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-plus"></span> ADD</a>
+  
+</form>
+{% endblock %}

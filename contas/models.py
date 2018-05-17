@@ -6,7 +6,7 @@ class COORDENADOR(models.Model):
     NOME = models.CharField("NOME", max_length=30)
     EMAIL = models.EmailField("EMAIL", max_length=200)
     CELULAR = models.IntegerField("CELULAR")
-    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO", max_length=100)
+    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO", max_length=100 , null=True)
 
 class ALUNO(models.Model):
     LOGIN = models.CharField("LOGIN", max_length=100)
@@ -14,7 +14,7 @@ class ALUNO(models.Model):
     NOME = models.CharField("NOME", max_length=100)
     EMAIL = models.EmailField("EMAIL", max_length=200)
     CELULAR = models.IntegerField("CELULAR")
-    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO")
+    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO" , null=True)
     RA = models.IntegerField("RA")
 
 class PROFESSOR(models.Model):
@@ -24,7 +24,7 @@ class PROFESSOR(models.Model):
     NOME = models.CharField("NOME", max_length=100)
     EMAIL = models.EmailField("EMAIL", max_length=100)
     CELULAR = models.CharField("CELULAR", max_length=50)
-    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO", max_length=100)
+    DT_EXPIRACAO = models.DateField("DT_EXPIRACAO", max_length=100, null=True)
     APELIDO = models.CharField("APELIDO", max_length=100)
 
 

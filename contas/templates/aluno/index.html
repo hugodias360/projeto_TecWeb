@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+<a class="btn btn-success" href="create"> <span class="glyphicon glyphicon-add"></span>Novo Aluno</a>
+<br/>
+<br/>
+<table class="table">
+        <tr>
+            <th>Nome </th>
+            <th>E-mail</th>
+            <th>Celular</th>
+            <th>Opções</th>
+        </tr>
+        {% for aluno in alunos %}
+            <tr>
+                <td>{{ aluno.NOME }}</td>
+                <td>{{ aluno.EMAIL }}</td>
+                <td>{{ aluno.CELULAR }}</td>
+                <td><center>
+                    <a class="btn btn-sm btn-warning" href="edit/{{ aluno.id }}"><span class="glyphicon glyphicon-edit"></span> Editar</a> 
+                    <a class="btn btn-sm btn-danger" href="delete/{{ aluno.id }}"><span class="glyphicon glyphicon-trash"></span> Deletar</a></center>
+                </td>
+            </tr>
+        {% endfor %}
+</table>
+{% endblock %}
